@@ -1,0 +1,47 @@
+{
+  "name": "iemkadesign",
+  "version": "1.0.0",
+  "description": "Iemka Design Architect Official Website",
+  "main": "engine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triadiprabowo/iemka-design.git"
+  },
+  "keywords": [
+    "Architecture",
+    "architecture",
+    "design",
+    "3d",
+    "building"
+  ],
+  "author": "Triadi Prabowo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/triadiprabowo/iemka-design/issues"
+  },
+  "homepage": "https://github.com/triadiprabowo/iemka-design#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "forever": "^0.15.1",
+    "jade": "^1.11.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-nop": "0.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "run-sequence": "^1.1.5"
+  }
+}

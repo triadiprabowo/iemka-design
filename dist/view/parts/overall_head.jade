@@ -1,0 +1,22 @@
+head
+	meta(content='text/html;charset=utf-8', http-equiv='Content-Type')
+	meta(content='utf-8', http-equiv='encoding')
+	meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no')
+	meta(name='description', content!= page.description)
+	meta(name='keywords', content!= page.keywords)
+	link(rel='shortcut icon', href='/dist/img/favicon.jpg')
+	link(rel='icon', type='image/jpeg', href='/dist/img/favicon.jpg')
+	link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+	each val in page.stylesheet
+		link(rel='stylesheet', href='/dist/css/'+val)
+	title!= page.title
+
+	if page.scripts != null
+		script(type="text/javascript").
+			window.$iemController = !{JSON.stringify(page.scripts.controller)};
+	else
+		script(type="text/javascript").
+			window.$iemController = null;	
+
+	// Script sources
+	script(src='/dist/js/front-core.js', async)
