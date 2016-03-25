@@ -4,4 +4,13 @@ html(lang='en', ng:controller!= page.controller)
 
 	body
 		// Include Header
-		include ./parts/back-header.jade
+		include ./parts/header.jade
+
+		.img-block-wrapper(ng:repeat="data in collections")
+			.img-block-inner
+				.img-block-cvr(ng:style="{'background-image': 'url(/dist/img/{{data.photo}})'}")
+				.img-block-description
+					p(ng:bind:html="data.name")
+
+		// Include Footer
+		include ./parts/footer.jade

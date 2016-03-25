@@ -1,0 +1,14 @@
+// Include Mobile Navigation
+include ./mobile-nav.jade
+
+.header-wrapper
+	.header-inner
+		.floatleft
+			a(href='/') #[img(src='/dist/img/text_logo_transparent.png')]
+		
+		.menu-navigation.floatright
+			ul.list-table#desktop-menu
+				li #[a(href='/') Home]
+				li #[a(href='/contact') Contact]
+			ul.list-table#mobile-menu
+				li(ng:click="toggleMobileMenu()") #[a(href='javascript:void(0)') #[span.icon-large.fa.fa-bars]]

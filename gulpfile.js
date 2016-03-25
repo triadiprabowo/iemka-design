@@ -21,10 +21,10 @@ if(GULP_ENV == 'development') {
 		nodemon = require('gulp-nodemon'),
 		livereload = require('gulp-livereload');
 
-	var buildTasks = ['js', 'css', 'img', 'vendor', 'view', 'watch'];
+	var buildTasks = ['js', 'css', 'font', 'img', 'vendor', 'view', 'watch'];
 }
 else {
-	var buildTasks = ['js', 'css', 'img', 'vendor', 'view'];
+	var buildTasks = ['js', 'css', 'font', 'img', 'vendor', 'view'];
 }
 
 gulp.task('cleanBuild', function() {
@@ -42,6 +42,11 @@ gulp.task('css', function() {
 	.pipe(cssmin())
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./dist/css/'));
+});
+
+gulp.task('font', function() {
+	gulp.src(SRC_PATH+'/res/fonts/*')
+	.pipe(gulp.dest('./dist/fonts/'));
 });
 
 gulp.task('img', function() {
