@@ -6,7 +6,7 @@ html(lang='en', ng:controller!= page.controller)
 		// Include Header
 		include ./parts/header.jade
 
-		.img-block-wrapper(ng:repeat="data in collections")
+		.img-block-wrapper(ng:repeat="data in collections", ng:click="enlargeImage(data.photo)")
 			.img-block-inner
 				.img-block-cvr(ng:style="{'background-image': 'url(/dist/img/{{data.photo}})'}")
 				.img-block-description

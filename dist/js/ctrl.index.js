@@ -3,7 +3,7 @@
 ** IEMKA 1.0
 */
 
-$iemApp.controller('iemIndexCtrl', function($scope, $rootScope) {
+$iemApp.controller('iemIndexCtrl', function($scope) {
 	
 	$scope.collections = [{
 		photo: '1.jpg',
@@ -24,5 +24,14 @@ $iemApp.controller('iemIndexCtrl', function($scope, $rootScope) {
 	
 	$scope.toggleMobileMenu = function() {
 		$('.mobile-navigation').slideToggle();
+	}
+
+	$scope.enlargeImage = function(img) {
+		$.magnificPopup.open({
+			items: {
+				src: '/dist/img/'+img
+			},
+			type: 'image'
+		});
 	}
 });

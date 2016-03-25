@@ -8,18 +8,15 @@ $script([
 ], function() {	
 
 	window.$iemApp = angular.module('iemka-app', [
-		'ngCookies',
 		'ngSanitize',
-		'vesparny.fancyModal'
 	]);
 
 	// jQuery Controller
 	// Developed by Triadi Prabowo
 	// Init Build 1.0	
 	var vendors = [
-		'//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-cookies.min.js',
 		'//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-sanitize.min.js',
-		'/dist/vendor/angular-fancy-modal.min.js'
+		'/dist/vendor/jquery.magnific-popup.min.js'
 	];
 
 	// Push Vendor
