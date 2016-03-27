@@ -46,6 +46,14 @@ body {
 }
 
 /* Header */
+.overall-header {
+	position: relative;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	min-height: 40vh;
+}
+
 .header-wrapper {
 	position: relative;
 	top: 0;
@@ -57,7 +65,7 @@ body {
 
 	width: 100%;
 	min-height: 5vh;
-	z-index: 0;
+	z-index: 2;
 	-wekbkit-box-shadow: 0 3px 5px 2px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 3px 5px 2px rgba(0,0,0,.2);
 	box-shadow: 0 3px 5px 2px rgba(0,0,0,.2);
@@ -86,6 +94,42 @@ body {
 
 .header-inner a:hover {
 	color: #52B8FF;
+}
+
+.back-header {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/dist/img/architecture.jpg') no-repeat bottom center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.back-header-content {
+	position: relative;
+	padding: .5em;	
+	color: #fff;	
+	display: block;
+	float: right;
+	text-align: right;
+	padding-top: 3%;
+	padding-right: 10%;
+	width: 50%;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.back-header-content h1, .back-header-content p {
+	-webkit-text-shadow: 1px 1px 2px #000;
+	-moz-text-shadow: 1px 1px 2px #000;
+	text-shadow: 1px 1px 2px #000;	
+}
+
+.back-header-content p {
+	line-height: 1.75em;
+	font-size: 1.25em;
 }
 
 /* Img Blocks */

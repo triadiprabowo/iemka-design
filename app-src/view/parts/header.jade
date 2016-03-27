@@ -1,14 +1,21 @@
 // Include Mobile Navigation
 include ./mobile-nav.jade
 
-.header-wrapper
-	.header-inner
-		.floatleft
-			a(href='/') #[img(src='/dist/img/text_logo_transparent.png')]
-		
-		.menu-navigation.floatright
-			ul.list-table#desktop-menu
-				li #[a(href='/') Home]
-				li #[a(href='/contact') Contact]
-			ul.list-table#mobile-menu
-				li(ng:click="toggleMobileMenu()") #[a(href='javascript:void(0)') #[span.icon-large.fa.fa-bars]]
+.overall-header
+	.header-wrapper
+		.header-inner
+			.floatleft
+				a(href='/') #[img(src='/dist/img/text_logo_transparent.png')]
+			
+			.menu-navigation.floatright
+				ul.list-table#desktop-menu
+					li #[a(href='/') Home]
+					li #[a(href='/about') About Us]
+					li #[a(href='/contact') Contact]
+				ul.list-table#mobile-menu
+					li(ng:click="toggleMobileMenu()") #[a(href='javascript:void(0)') #[span.icon-large.fa.fa-bars]]
+
+	.back-header
+	.back-header-content
+		h1 Welcome to IEMKA Architecture Design
+		p IEMKA is startup company that works on architecture section, we had talented designers dedicated their life into design the best architectas you requested, customer satisfaction is compulsary and it's our vision to create the best and realize our customer's imagination and we built it as you wish.
