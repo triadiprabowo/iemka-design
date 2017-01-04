@@ -17,7 +17,7 @@ module.exports = (function() {
 	app.get('/', function(req, res, next) {
 		res.render('index', {
 			page: {
-				title: 'Welcome to IEMKA Design & Architecture',
+				title: 'Welcome to Major Design & Architecture',
 				description: meta.description.general,
 				keywords: meta.keywords.general,
 				controller: 'iemIndexCtrl',
