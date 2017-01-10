@@ -319,4 +319,8 @@ body {
 	#mobile-menu {
 		display: block;
 	}
+
+	.description-wrapper {
+		width: 80%;
+	}
 }
