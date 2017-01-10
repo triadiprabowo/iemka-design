@@ -29,5 +29,35 @@ module.exports = (function() {
 		});
 	});
 
+	app.get('/about', function(req, res, next) {
+		res.render('about', {
+			page: {
+				title: 'Tentang Major Design',
+				description: meta.description.general,
+				keywords: meta.keywords.general,
+				controller: 'iemIndexCtrl',
+				stylesheet: ['all.min.css'],
+				scripts: {
+					controller: ['/dist/js/ctrl.index.js']
+				}
+			}
+		});
+	});
+
+	app.get('/contact', function(req, res, next) {
+		res.render('contact', {
+			page: {
+				title: 'Kontak Kami :: Major Design',
+				description: meta.description.general,
+				keywords: meta.keywords.general,
+				controller: 'iemIndexCtrl',
+				stylesheet: ['all.min.css'],
+				scripts: {
+					controller: ['/dist/js/ctrl.index.js']
+				}
+			}
+		});
+	});
+
 	return app;
 })();

@@ -34,4 +34,6 @@ $iemApp.controller('iemIndexCtrl', function($scope) {
 			type: 'image'
 		});
 	}
+
+	$scope.$activeRoute = window.location.pathname.substr(1, window.location.pathname.length - 1)
 });

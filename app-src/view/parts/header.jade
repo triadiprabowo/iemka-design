@@ -15,7 +15,7 @@ include ./mobile-nav.jade
 				ul.list-table#mobile-menu
 					li(ng:click="toggleMobileMenu()") #[a(href='javascript:void(0)') #[span.icon-large.fa.fa-bars]]
 
-	.back-header
-	.back-header-content
+	.back-header(style="background: url({{$activeRoute==''? '/dist/img/architecture.jpg' : '/dist/img/skyscrapers.jpg'}})")
+	.back-header-content(ng-show="$activeRoute == ''")
 		h1 Welcome to Major Design
 		p Major Design is a startup company that works on architecture section, we had talented designers dedicated their life into designing best architectas you requested, customer satisfaction is compulsary and it's our vision to create the best and realize our customer's imagination and we built it as you wish.
