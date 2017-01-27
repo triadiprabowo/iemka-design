@@ -16,7 +16,8 @@ $script([
 	// Init Build 1.0	
 	var vendors = [
 		'//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-sanitize.min.js',
-		'/dist/vendor/jquery.magnific-popup.min.js'
+		//'/dist/vendor/jquery.magnific-popup.min.js'
+		'/dist/vendor/imageviewer.min.js'
 	];
 
 	// Push Vendor
